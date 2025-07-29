@@ -1,0 +1,4 @@
+name = "miniplay"
+compatibility_date = "2025-07-29"
+compatibility_flags = ["nodejs_compat"]
+
