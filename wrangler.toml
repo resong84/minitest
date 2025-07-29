@@ -1,4 +1,7 @@
-name = "miniplay"
-compatibility_date = "2025-07-29"
-compatibility_flags = ["nodejs_compat"]
+# wrangler.toml 예시
+name = minitest # 프로젝트 이름
 
+[pages]
+dir = .next # 또는 Next.js 빌드 출력 디렉토리인 ".next/static" 또는 ".next"
+# 만약 next-on-pages가 생성하는 최종 아웃풋을 지정한다면,
+# pages_build_output_dir = ".next" # 또는 next-on-pages의 최종 출력 경로
