@@ -1,7 +1,11 @@
-[build]
-command = "npm install --legacy-peer-deps && npm run pages:build"
-cwd = "."
+# wrangler.toml
+name = "miniplayportal"
+compatibility_flags = ["nodejs_compat"]
 
-[pages]
-dir = ".vercel/output/static"
-pages_build_output_dir = ".vercel/output"
+[build]
+command = "npm run pages:build"
+cwd = "."
+upload_format = "service-worker"
+
+[build.upload]
+dir = ".vercel/output/static"  # ← 이게 핵심!
