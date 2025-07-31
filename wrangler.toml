@@ -1,10 +1,7 @@
-name = "minitest"
-
 [build]
 command = "npm install --legacy-peer-deps && npm run pages:build"
 cwd = "."
 
 [pages]
-dir = ".vercel"  # pages:build 스크립트에 따라 .vercel 디렉토리로 설정
-
-# 혹은 .next/static 등, 최종 빌드 산출물 경로 확인 후 지정 필요
+dir = ".vercel/output/static"
+pages_build_output_dir = ".vercel/output"
